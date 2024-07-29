@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background: url(https://marketplace.canva.com/EAE_NRav_uY/1/0/1600w/canva-red-neon-organized-desktop-gaming-background---desktop-wallpaper-2eq-ewMjw4U.jpg) no-repeat center center/cover;
+   gap: 50px;
+   a{
+    color: white;
+    text-align: center;
+     font-size: 100px;
+     border-radius: 30px;
+     border: 2px solid white;    
+   }
+   h2{
+    text-align: center;
+    color: #fff;
+    &:hover{
+        color: chartreuse;
+        transform:scale(1.5) ;
+
+    }
+
+   }
+   
+   .main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  button{
+    text-align: end;
+    gap: 20px;
+    top: 10px;
+    right: 10px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    border-radius: 17px;
+    padding: 20px;
+    background-color: #d1cccc;
+    transition: 1s;
+    img{
+      width: 100%;
+      border-radius: 17px;
+      padding-bottom: 10px;
+    }
+  }
+    
+}
+
+.card:hover{
+    background-color: aquamarine;
+    transform: scale(1.2);
+}
+a:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+
+.h1{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.game{
+    width: 646px;
+    height: 224px;
+    border: 2px solid green;
+    margin: 200px auto;
+    border-radius: 30px;
+    background: url(https://wallpaperaccess.com/full/4442372.gif) no-repeat center center/cover;
+}
+
+
+
+.dino{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top: 150px;
+    left: 30px;
+    z-index: 99;
+    background: url(https://media.tenor.com/0o0T8nh8W4EAAAAi/sonic-is-runinng-run.gif) no-repeat center center/cover;
+} 
+
+.cactus{
+    width: 30px;
+    height: 85px;
+    position: relative;
+    top: 90px;
+    left: 580px;
+    background: url(https://pngimg.com/uploads/cactus/cactus_PNG23622.png) no-repeat center center/cover;
+    background-size: 30px 40px;
+    animation: cactus 1.5s infinite linear;
+}
+
+@keyframes cactus {
+    0%{
+        left: 600px;
+    }
+    100%{
+        left: -20px;
+    }
+}
+
+.jump{
+   animation: jump 0.3s linear;
+
+}
+
+@keyframes jump {
+    0%{
+        top: 150px;
+    }
+    30%{
+        top: 115px;
+    }
+    50%{
+        top: 50px;
+
+    }
+
+    80%{
+        top: 115px;
+    }
+    100%{
+        top: 150px;
+    }
+}
+
+.solnik{
+    width: 100px;
+    height: 105px;
+    position: fixed;
+    z-index: 100;
+    top: 40%;
+    left: 70%;
+    background: url(bird-silhouette-illustration_23-2151200399-removebg-preview.png) no-repeat center center/cover;
+    background-size: 120px 50px;
+    animation: solnik 8s infinite linear;
+}
+
+@keyframes solnik {
+    0%{
+        left: 60%;
+    }
+    100%{
+        left: 25%;
+    }
+}
